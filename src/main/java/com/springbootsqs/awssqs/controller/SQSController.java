@@ -1,4 +1,4 @@
-package com.springbootsql.awssqs.controller;
+package com.springbootsqs.awssqs.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

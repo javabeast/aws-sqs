@@ -1,4 +1,4 @@
-package com.springbootsql.awssqs;
+package com.springbootsqs.awssqs;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
