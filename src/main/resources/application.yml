@@ -4,7 +4,7 @@ server:
 cloud:
   aws:
     region:
-      static: us-east-1
+      static: ap-south-1
       auto: false
     credentials:
       access-key: <YOUR ACCESS KEY>
