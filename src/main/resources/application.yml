@@ -1,13 +1,15 @@
-server:
-  port: 9001
-  
+---
 cloud:
   aws:
-    region:
-      static: us-east-1
-      auto: false
     credentials:
-      access-key: <YOUR ACCESS KEY>
-      secret-key: <YOUR SECRET ACCESS KEY>
+      access-key: <access-key>
+      secret-key: <secret-key>
     end-point:
-      uri: https://sqs.us-east-1.amazonaws.com/<YOUR ID, get this from SQS Console>/awssqs
+      uri: <sqs url>
+    region:
+      auto: false
+      static: ap-south-1
+    stack:
+      auto: false
+server:
+  port: 9001
