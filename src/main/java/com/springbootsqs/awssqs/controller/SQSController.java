@@ -28,8 +28,8 @@ public class SQSController {
 		queueMessagingTemplate.send(sqsEndPoint, MessageBuilder.withPayload("hello from Spring Boot").build());
 	}
 	
-	@SqsListener("spring-boot-sqs")
+	@SqsListener(value = { "${cloud.aws.end-point.uri}" })
 	public void getMessage(String message) {
-		LOG.info("Message from SQS Queue - "+message);
+		LOG.info("Coming from SQS Queue - "+message);
 	}
 }
